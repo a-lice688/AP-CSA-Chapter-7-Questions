@@ -1,6 +1,8 @@
 public class anagrams {
     
     public static boolean areAnagrams(String a, String b) {
+
+        if (a.length() != b.length()) return false; 
         
         int[] hist = new int[26];
         
